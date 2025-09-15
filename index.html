@@ -1,32 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in Page</title>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BMW M4 Competition — CarRental</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="div">
-      <h1>Log In</h1>
-      <div class="main">
-        <input type="text" class="hii" placeholder="Username" name="hi" />
-        <input type="text" class="hii" placeholder="Passward" name="hi" />
+    <!-- Top bar -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark">C</span>
+          <span class="brand-text">CarRental</span>
+        </a>
+
+        <nav class="nav">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Cars</a>
+          <a href="#" class="nav-link">About</a>
+        </nav>
+
+        <div class="search-inline">
+          <input
+            type="text"
+            placeholder="Search cars"
+            aria-label="Search cars"
+          />
+          <button class="icon-btn" aria-label="Search">🔍</button>
+        </div>
+
+        <div class="header-cta">
+          <a class="text-link" href="#">List cars</a>
+          <a class="btn btn-primary" href="#">Sign up</a>
+        </div>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
       </div>
-      <div class="hello">
-        <input type="checkbox" name="" id="by" />
-        <p>Remember Me</p>
-        <a href="#">Forget Passward</a>
+    </header>
+
+    <main>
+      <div class="container">
+        <a href="#" class="back-link">← Back to all cars</a>
+
+        <!-- Main grid -->
+        <div class="grid">
+          <section class="content">
+            <!-- Gallery -->
+            <div class="gallery">
+              <img src="Dodge.jpg" alt="BMW M4 Competition" />
+            </div>
+
+            <!-- Title -->
+            <h1 class="title">BMW M4 COMPETITION</h1>
+            <p class="subtitle">2022 · SUV</p>
+
+            <!-- Chips -->
+            <div class="chips">
+              <div class="chip">
+                <span class="chip-ic">👤</span>
+                <span>5 Seats</span>
+              </div>
+              <div class="chip">
+                <span class="chip-ic">⛽</span>
+                <span>Gasoline</span>
+              </div>
+              <div class="chip">
+                <span class="chip-ic">⚙️</span>
+                <span>Automatic</span>
+              </div>
+              <div class="chip">
+                <span class="chip-ic">📍</span>
+                <span>Los Angeles</span>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <section class="panel">
+              <h2 class="h6">Description</h2>
+              <p class="muted">
+                The BMW X5 is a mid‑size luxury SUV produced by BMW. The X5 made
+                its debut in 1999 as the first SUV ever produced by BMW.
+              </p>
+            </section>
+
+            <!-- Features -->
+            <section class="panel">
+              <h2 class="h6">Features</h2>
+              <ul class="features">
+                <li>Leather Seats</li>
+                <li>Wireless Charging</li>
+                <li>Panoramic Sunroof</li>
+                <li>360 Camera</li>
+              </ul>
+            </section>
+          </section>
+
+          <!-- Sticky booking card -->
+          <aside class="booking">
+            <div class="card">
+              <div class="price">
+                <div class="price-main">$299</div>
+                <div class="price-sub">per day</div>
+              </div>
+              <label class="field">
+                <span class="label">Pickup Date</span>
+                <input type="date" />
+              </label>
+              <label class="field">
+                <span class="label">Return Date</span>
+                <input type="date" />
+              </label>
+              <button class="btn btn-primary wide">Book Now</button>
+              <p class="tiny muted">No credit card required to reserve</p>
+            </div>
+          </aside>
+        </div>
       </div>
-      <button>Login</button>
-      <p class="my">
-        Don,t have an account?<a
-          href="file:///C:/Users/LENOVO/Documents/LOG/hi.html"
-          >Ragister</a
-        >
-      </p>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="f-brand">
+          <a class="brand" href="#">
+            <span class="brand-mark">C</span>
+            <span class="brand-text">CarRental</span>
+          </a>
+          <p>
+            Premium car rental service with a wide selection of luxury and
+            everyday vehicles for all driving needs.
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">t</a>
+            <a href="#" aria-label="Instagram">i</a>
+          </div>
+        </div>
+
+        <div class="f-col">
+          <h4>Quick Links</h4>
+          <a href="#">Home</a>
+          <a href="#">Browse Cars</a>
+          <a href="#">List Your Car</a>
+          <a href="#">About Us</a>
+        </div>
+
+        <div class="f-col">
+          <h4>Resources</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Insurance</a>
+        </div>
+
+        <div class="f-col">
+          <h4>Contact</h4>
+          <p>1234 Luxury Drive<br />San Francisco, CA 94107</p>
+          <p>+1 (555) 123‑4567<br />car@example.com</p>
+        </div>
+      </div>
+      <div class="footer-base">
+        <div class="container base-inner">
+          <span>© 2025 CarRental. All rights reserved.</span>
+          <div class="base-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
-  <html></html>
 </html>
