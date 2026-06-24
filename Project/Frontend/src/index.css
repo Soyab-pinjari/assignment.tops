@@ -1,0 +1,12 @@
+@import "tailwindcss";
+input,
+button {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: blue;
+}
