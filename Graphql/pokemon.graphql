@@ -1,0 +1,37 @@
+query {
+  pokemon_v2_pokemon(limit: 3) {
+    name
+    id
+  }
+}
+
+query {
+  pokemon(name: "pikachu") {
+    name
+    maxHP
+    types
+  }
+}
+
+//mutaiotn
+mutation {
+  addPlaylist(
+    input: {
+      name: "My Favorite Songs"
+      description: "Best songs of 2026"
+    }
+  ) {
+    id
+    name
+    description
+  }
+}
+(* 
+mutation	Indicates that the query will modify data.
+addPlaylist	Calls the mutation to create a new playlist.
+input	Contains the data to be added.
+name	Specifies the playlist name.
+description	Specifies the playlist description.
+id	Returns the unique ID of the created playlist.
+name (response)	Returns the name of the new playlist.
+description (response)	Returns the description of the new playlist. *)
