@@ -19,7 +19,13 @@ function App() {
         followers={1200}
         profilePic="https://i.pravatar.cc/100?img=12"
       />
+  <h1>Shopping Cart</h1>
+      <CartItem />
 
+      <hr />
+
+      <h1>Spotify Song Voting</h1>
+      <SongVote />
     </div>
   );
 }
